@@ -40,7 +40,7 @@ function App() {
 
   return (
     <>
-      <div className='flex flex-wrap justify-center px-3 mx-1 gap-3 md:w-[50%] w-[100%]'>
+      <div className='flex flex-wrap justify-center px-3 mx-1 gap-3'>
       <button
       onClick={() => selectQuiz("java")}
       className={`py-2 px-4 mx-2  border rounded-[10px]  ${activeQuizType === "java" ? 'bg-gray-400 text-white' : 'bg-gray-200'}`}
