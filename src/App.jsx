@@ -48,8 +48,13 @@ function App() {
   };
 
   return (
+<<<<<<< HEAD
     <div className="relative flex">
       {/* Toggle button for mobile */}
+=======
+    <>
+      <div className='flex flex-wrap justify-center px-3 mx-1 gap-3'>
+>>>>>>> 31203983fef148f0d1d8bfbb8f313f4adc5b1974
       <button
         onClick={() => setIsSidebarVisible(!isSidebarVisible)}
         className="md:hidden p-2 bg-gray-500 text-white rounded-md m-2 fixed top-4 left-8  z-20"
