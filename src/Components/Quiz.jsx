@@ -31,28 +31,28 @@ export default function Quiz({quizType}) {
 
     }
   return (
-    <div className='w-[100%] md:h-[90vh] h-[100vh] flex flex-col justify-start items-center'>
-    <div className='md:w-[90%] w-[100%] h-[90vh] flex flex-col justify-start items-start'>
+    <div className='md:w-[600px] w-[400px] md:h-[80vh]  flex flex-col justify-start items-center'>
+    <div className='md:w-[95%] w-[100%] md:h-[90vh] flex flex-col justify-start items-start'>
     <div className='w-[100%]'>
-    <h1 className='text-3xl font-bold py-4 text-left'>Quiz App</h1>
+    <h1 className='text-3xl font-bold py-4 mt-3 text-left'>Quiz App</h1>
     </div>
-    <div className='md:w-[60%] w-[100%] md:h-[400px]  flex flex-col justify-start'>
+    <div className='md:w-[600px] w-[350px]  md:h-[400px]  flex flex-col justify-start'>
     {
         show?(<QuizResult score={score} totalScore = {quizType.length} tryAgain = {resetAll}/>):(
             <>
             <div className='flex flex-col justify-start'>
             <div className="questions text-start">
             <h1 className='text-3xl py-3 '>Question {queNo+1} of {quizType.length} </h1>
-            <h1 className='text-2xl py-3 mb-4'>{quizType[queNo].question}</h1>
+            <h1 className='text-3xl font-semibold py-3 mb-4'>{quizType[queNo].question}</h1>
              
             </div>
-            <div className=" md:w-[70%] w-[100%]">
+            <div className=" md:w-[90%] w-[100%]">
             {
                 quizType[queNo].options.map((option,i)=>{
                     return(
                         <>
                         <button key={i} 
-                        className={`${clickOption == i+1?"bg-gray-400":null}  py-2 w-[100%] my-1 rounded-[2px] bg-gray-200 hover:bg-gray-300 duration-150`}
+                        className={`${clickOption == i+1?"bg-gray-400":null} text-[1.2em]  py-2 w-[100%] my-1 rounded-[2px] bg-gray-200 hover:bg-gray-300 duration-150`}
                         
                         onClick={()=>setClickOption(i+1)}>
                         <div className='flex md:gap-5 gap-2'>
@@ -77,3 +77,5 @@ export default function Quiz({quizType}) {
     </div>
     )
     }
+  
+    

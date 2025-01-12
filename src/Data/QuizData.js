@@ -100,6 +100,109 @@ export const javaQuiz = [
      answer: 1
    }
  ];
+ export const ipcConstitutionQuiz = [
+   {
+     question: "1) Which section of the Indian Penal Code deals with murder?",
+     options: ["Section 302", "Section 304", "Section 307", "Section 300"],
+     answer: 1
+   },
+   {
+     question: "2) Under which Article of the Indian Constitution is 'Right to Equality' provided?",
+     options: ["Article 12", "Article 14", "Article 19", "Article 21"],
+     answer: 2
+   },
+   {
+     question: "3) Which of the following sections in IPC deals with theft?",
+     options: ["Section 378", "Section 392", "Section 377", "Section 375"],
+     answer: 1
+   },
+   {
+     question: "4) The idea of the Directive Principles of State Policy was borrowed from which country's constitution?",
+     options: ["USA", "Ireland", "UK", "France"],
+     answer: 2
+   },
+   {
+     question: "5) Which section of IPC provides punishment for defamation?",
+     options: ["Section 500", "Section 509", "Section 503", "Section 506"],
+     answer: 1
+   },
+   {
+     question: "6) Under which part of the Indian Constitution is the Union and its Territory described?",
+     options: ["Part I", "Part III", "Part IV", "Part V"],
+     answer: 1
+   },
+   {
+     question: "7) Which of the following Articles guarantees the Right to Freedom of Religion?",
+     options: ["Article 19 to 22", "Article 25 to 28", "Article 32 to 35", "Article 14 to 18"],
+     answer: 2
+   },
+   {
+     question: "8) Under which section of IPC is 'culpable homicide not amounting to murder' defined?",
+     options: ["Section 304", "Section 302", "Section 305", "Section 303"],
+     answer: 1
+   },
+   {
+     question: "9) How many schedules are there in the Indian Constitution?",
+     options: ["8", "10", "12", "14"],
+     answer: 3
+   },
+   {
+     question: "10) What is the maximum punishment for committing robbery under IPC?",
+     options: ["5 years imprisonment", "7 years imprisonment", "10 years imprisonment and fine", "Life imprisonment"],
+     answer: 3
+   },
+   {
+     question: "11) Under which Article is the procedure for amendment of the Indian Constitution laid down?",
+     options: ["Article 356", "Article 360", "Article 368", "Article 370"],
+     answer: 3
+   },
+   {
+     question: "12) What is the term used for the division of powers between the Union and State Governments?",
+     options: ["Separation of powers", "Federalism", "Judicial Review", "Quasi-federalism"],
+     answer: 2
+   },
+   {
+     question: "13) Which section of IPC deals with 'criminal conspiracy'?",
+     options: ["Section 120A", "Section 123", "Section 124A", "Section 125"],
+     answer: 1
+   },
+   {
+     question: "14) Which part of the Indian Constitution deals with the Panchayati Raj system?",
+     options: ["Part VII", "Part IX", "Part X", "Part XII"],
+     answer: 2
+   },
+   {
+     question: "15) Which section of IPC deals with dowry death?",
+     options: ["Section 304B", "Section 498A", "Section 306", "Section 312"],
+     answer: 1
+   },
+   {
+     question: "16) Which of the following Articles deals with the ‘Abolition of Untouchability’?",
+     options: ["Article 15", "Article 17", "Article 21", "Article 25"],
+     answer: 2
+   },
+   {
+     question: "17) Which section of IPC deals with ‘grievous hurt’?",
+     options: ["Section 319", "Section 320", "Section 323", "Section 326"],
+     answer: 2
+   },
+   {
+     question: "18) The Preamble of the Indian Constitution declares India to be:",
+     options: ["A Sovereign, Democratic Republic", "A Sovereign, Socialist, Secular, Democratic Republic", "A Federal, Socialist, Secular State", "A Union of States"],
+     answer: 2
+   },
+   {
+     question: "19) Which IPC section punishes attempt to commit suicide?",
+     options: ["Section 307", "Section 309", "Section 308", "Section 310"],
+     answer: 2
+   },
+   {
+     question: "20) Who is regarded as the ‘Architect of the Indian Constitution’?",
+     options: ["Mahatma Gandhi", "Dr. B.R. Ambedkar", "Jawaharlal Nehru", "Sardar Patel"],
+     answer: 2
+   }
+ ];
+ 
  export const pyQuiz = [
    {
       question: "1) Evaluate the following Python expression, if x=3, y=5, and z=10 (++z + y - y + z + x++)",

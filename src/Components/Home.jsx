@@ -1,7 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
+import { useSelector } from 'react-redux';
 export default function Home() {
+  // <h1>{quizName}</h1>
+  // const quizName = useSelector((state) => state.quiz.quizName);
   return (
     <div className='md:w-[50%] w-[85%]  flex flex-col gap-4  mx-auto py-5'>
     <h1 className='text-3xl font-bold text-gray-600 my-3'>Start the Quiz with Your Favorite Topic </h1>
