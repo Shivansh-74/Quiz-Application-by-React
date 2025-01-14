@@ -1,3 +1,600 @@
+export const gitGithubQuiz = [
+   {
+     question: "1) What is Git?",
+     options: [
+       "A version control system",
+       "A programming language",
+       "A text editor",
+       "A compiler"
+     ],
+     answer: 1
+   },
+   {
+     question: "2) What is GitHub?",
+     options: [
+       "A cloud-based hosting service for Git repositories",
+       "An integrated development environment",
+       "A command-line tool",
+       "A database management system"
+     ],
+     answer: 1
+   },
+   {
+     question: "3) Which command is used to create a new Git repository?",
+     options: ["git init", "git new", "git start", "git create"],
+     answer: 1
+   },
+   {
+     question: "4) How do you check the current status of a Git repository?",
+     options: ["git check", "git status", "git log", "git info"],
+     answer: 2
+   },
+   {
+     question: "5) Which command is used to stage changes for commit?",
+     options: ["git commit", "git stage", "git add", "git push"],
+     answer: 3
+   },
+   {
+     question: "6) How do you commit staged changes?",
+     options: ["git commit", "git save", "git push", "git stage"],
+     answer: 1
+   },
+   {
+     question: "7) What is a branch in Git?",
+     options: [
+       "A version of a project",
+       "A remote repository",
+       "A backup copy",
+       "A bug tracker"
+     ],
+     answer: 1
+   },
+   {
+     question: "8) Which command is used to switch between branches?",
+     options: ["git switch", "git checkout", "git change", "git branch"],
+     answer: 2
+   },
+   {
+     question: "9) How do you merge a branch in Git?",
+     options: [
+       "git join <branch>",
+       "git merge <branch>",
+       "git integrate <branch>",
+       "git combine <branch>"
+     ],
+     answer: 2
+   },
+   {
+     question: "10) Which command is used to push changes to a remote repository?",
+     options: ["git send", "git push", "git deploy", "git upload"],
+     answer: 2
+   },
+   {
+     question: "11) How do you clone a repository from GitHub?",
+     options: ["git copy <URL>", "git clone <URL>", "git fetch <URL>", "git pull <URL>"],
+     answer: 2
+   },
+   {
+     question: "12) What is a pull request in GitHub?",
+     options: [
+       "A request to delete a branch",
+       "A request to merge changes into a branch",
+       "A request to create a new repository",
+       "A request to switch branches"
+     ],
+     answer: 2
+   },
+   {
+     question: "13) Which command is used to view the commit history?",
+     options: ["git show", "git status", "git log", "git commits"],
+     answer: 3
+   },
+   {
+     question: "14) How do you fetch changes from a remote repository without merging?",
+     options: ["git pull", "git sync", "git fetch", "git update"],
+     answer: 3
+   },
+   {
+     question: "15) What is the purpose of '.gitignore'?",
+     options: [
+       "To track files to be deleted",
+       "To ignore specific files and directories in Git",
+       "To delete files from the repository",
+       "To reset files to their original state"
+     ],
+     answer: 2
+   }
+ ];
+ 
+export const cppQuiz = [
+   {
+     question: "1) What is the default access specifier for members of a class in C++?",
+     options: ["private", "public", "protected", "static"],
+     answer: 1
+   },
+   {
+     question: "2) Which of the following is used to dynamically allocate memory in C++?",
+     options: ["malloc()", "new", "alloc()", "calloc()"],
+     answer: 2
+   },
+   {
+     question: "3) Which operator is used to access the members of a structure through a pointer?",
+     options: [".", "->", "::", "&"],
+     answer: 2
+   },
+   {
+     question: "4) What is the purpose of the 'virtual' keyword in C++?",
+     options: [
+       "To define an abstract function",
+       "To enable function overriding in derived classes",
+       "To declare a static function",
+       "To declare a constant function"
+     ],
+     answer: 2
+   },
+   {
+     question: "5) How do you define a constant in C++?",
+     options: [
+       "Using #define",
+       "Using the 'const' keyword",
+       "Both A and B",
+       "Using the 'constexpr' keyword"
+     ],
+     answer: 3
+   },
+   {
+     question: "6) What is a pure virtual function?",
+     options: [
+       "A function that has no definition",
+       "A function defined with the 'virtual' keyword",
+       "A function declared by assigning 0 to it",
+       "A function that cannot be overridden"
+     ],
+     answer: 3
+   },
+   {
+     question: "7) Which of the following is used to implement multiple inheritance in C++?",
+     options: ["Comma operator", "Inheritance list", "Template", "Polymorphism"],
+     answer: 2
+   },
+   {
+     question: "8) Which header file is required for using input and output functions in C++?",
+     options: ["stdio.h", "iostream", "fstream", "stdlib.h"],
+     answer: 2
+   },
+   {
+     question: "9) Which keyword is used to prevent a class from being inherited?",
+     options: ["final", "private", "protected", "sealed"],
+     answer: 1
+   },
+   {
+     question: "10) How can you catch all exceptions in C++?",
+     options: ["catch (...)", "catch (exception)", "catch (all)", "catch (*)"],
+     answer: 1
+   },
+   {
+     question: "11) What is the output of 'cout << 5/2;'?",
+     options: ["2", "2.5", "2.0", "Error"],
+     answer: 1
+   },
+   {
+     question: "12) Which of the following is NOT a valid loop in C++?",
+     options: ["for", "foreach", "while", "do-while"],
+     answer: 2
+   },
+   {
+     question: "13) What does STL stand for in C++?",
+     options: [
+       "Standard Template Library",
+       "Simple Type Library",
+       "System Type Loader",
+       "Static Template Library"
+     ],
+     answer: 1
+   },
+   {
+     question: "14) How do you declare a pointer in C++?",
+     options: ["int ptr*", "*ptr int", "int *ptr", "ptr int*"],
+     answer: 3
+   },
+   {
+     question: "15) What is the output of the following code?\n\n```cpp\nint x = 5; \ncout << ++x;\n```\n",
+     options: ["5", "6", "Error", "Undefined"],
+     answer: 2
+   },
+   {
+     question: "16) Which of the following allows function overloading?",
+     options: [
+       "Different number of parameters",
+       "Different parameter types",
+       "Both A and B",
+       "Different return types"
+     ],
+     answer: 3
+   },
+   {
+     question: "17) What does 'this' pointer refer to in C++?",
+     options: [
+       "A pointer to the base class",
+       "A pointer to the calling object",
+       "A pointer to the derived class",
+       "A pointer to the main function"
+     ],
+     answer: 2
+   },
+   {
+     question: "18) What is the size of an int data type (on a 32-bit system)?",
+     options: ["2 bytes", "4 bytes", "8 bytes", "1 byte"],
+     answer: 2
+   },
+   {
+     question: "19) Which function is automatically called when an object is destroyed?",
+     options: ["Constructor", "Destructor", "Deallocator", "Finalizer"],
+     answer: 2
+   },
+   {
+     question: "20) Which keyword is used to handle exceptions in C++?",
+     options: ["try", "throw", "catch", "All of the above"],
+     answer: 4
+   }
+ ];
+ 
+export const awsQuiz = [
+   {
+     question: "1) What does AWS stand for?",
+     options: [
+       "Amazon Web Security",
+       "Amazon Web Services",
+       "Advanced Web Solutions",
+       "Automated Web Services"
+     ],
+     answer: 2
+   },
+   {
+     question: "2) Which AWS service is used for scalable object storage?",
+     options: ["Amazon RDS", "Amazon S3", "Amazon EC2", "Amazon VPC"],
+     answer: 2
+   },
+   {
+     question: "3) What is the primary function of Amazon EC2?",
+     options: [
+       "Data warehousing",
+       "Content delivery",
+       "Virtual server hosting",
+       "Relational database service"
+     ],
+     answer: 3
+   },
+   {
+     question: "4) Which AWS service is used to manage relational databases?",
+     options: ["Amazon S3", "Amazon EC2", "Amazon RDS", "Amazon CloudFront"],
+     answer: 3
+   },
+   {
+     question: "5) What is AWS Lambda used for?",
+     options: [
+       "Running applications on virtual machines",
+       "Running code without provisioning or managing servers",
+       "Monitoring application performance",
+       "Storing large datasets"
+     ],
+     answer: 2
+   },
+   {
+     question: "6) Which AWS service helps to create a secure network?",
+     options: ["Amazon Route 53", "Amazon VPC", "Amazon CloudWatch", "Amazon RDS"],
+     answer: 2
+   },
+   {
+     question: "7) What is Amazon CloudFront?",
+     options: [
+       "A content delivery network (CDN)",
+       "A relational database service",
+       "A cloud storage service",
+       "A compute service"
+     ],
+     answer: 1
+   },
+   {
+     question: "8) Which AWS service is used for monitoring and logging?",
+     options: ["Amazon S3", "Amazon CloudWatch", "Amazon EC2", "Amazon RDS"],
+     answer: 2
+   },
+   {
+     question: "9) What does Amazon Route 53 provide?",
+     options: [
+       "Scalable DNS and domain name registration",
+       "Distributed denial-of-service protection",
+       "Relational database management",
+       "Application load balancing"
+     ],
+     answer: 1
+   },
+   {
+     question: "10) Which of the following services is used for API management in AWS?",
+     options: [
+       "Amazon RDS",
+       "Amazon API Gateway",
+       "Amazon CloudFront",
+       "Amazon S3"
+     ],
+     answer: 2
+   },
+   {
+     question: "11) What is an AWS Availability Zone?",
+     options: [
+       "A single data center",
+       "A region of AWS services",
+       "A physical location with multiple data centers",
+       "A global network of edge locations"
+     ],
+     answer: 3
+   },
+   {
+     question: "12) Which AWS service is used to deploy and manage containers?",
+     options: [
+       "Amazon EC2",
+       "Amazon ECS",
+       "Amazon S3",
+       "Amazon VPC"
+     ],
+     answer: 2
+   },
+   {
+     question: "13) What is the main purpose of AWS IAM?",
+     options: [
+       "Managing databases",
+       "Managing storage",
+       "Managing user access and permissions",
+       "Monitoring cloud resources"
+     ],
+     answer: 3
+   },
+   {
+     question: "14) Which AWS service is used for automated backups and snapshots of instances?",
+     options: ["Amazon RDS", "Amazon CloudWatch", "AWS Backup", "Amazon Route 53"],
+     answer: 3
+   },
+   {
+     question: "15) What does the AWS Elastic Load Balancer (ELB) do?",
+     options: [
+       "Distributes incoming traffic across multiple targets",
+       "Monitors application logs",
+       "Stores data in a highly scalable manner",
+       "Provides content delivery"
+     ],
+     answer: 1
+   },
+   {
+     question: "16) What type of storage does Amazon EBS provide?",
+     options: [
+       "Object storage",
+       "Block storage",
+       "File storage",
+       "Cold storage"
+     ],
+     answer: 2
+   },
+   {
+     question: "17) Which AWS service provides serverless relational databases?",
+     options: ["Amazon DynamoDB", "Amazon RDS", "Amazon Aurora Serverless", "Amazon EC2"],
+     answer: 3
+   },
+   {
+     question: "18) How does AWS Auto Scaling work?",
+     options: [
+       "It scales your instances up or down automatically based on demand",
+       "It manages DNS records",
+       "It balances the network traffic",
+       "It stores data redundantly across regions"
+     ],
+     answer: 1
+   },
+   {
+     question: "19) What type of database is Amazon DynamoDB?",
+     options: [
+       "Relational database",
+       "Document database",
+       "Key-value NoSQL database",
+       "Graph database"
+     ],
+     answer: 3
+   },
+   {
+     question: "20) Which AWS service provides edge locations for caching content?",
+     options: [
+       "Amazon EC2",
+       "Amazon CloudFront",
+       "Amazon Route 53",
+       "Amazon S3"
+     ],
+     answer: 2
+   }
+ ];
+ 
+export const mongoDBQuiz = [
+   {
+     question: "1) What is MongoDB?",
+     options: [
+       "A relational database",
+       "A NoSQL database",
+       "A front-end framework",
+       "A programming language"
+     ],
+     answer: 2
+   },
+   {
+     question: "2) Which of the following is used to insert a document in MongoDB?",
+     options: [
+       "db.collection.add()",
+       "db.collection.insertOne()",
+       "db.collection.push()",
+       "db.collection.insertDocument()"
+     ],
+     answer: 2
+   },
+   {
+     question: "3) What is the default port for MongoDB?",
+     options: ["27015", "8080", "27017", "5432"],
+     answer: 3
+   },
+   {
+     question: "4) Which command is used to view all databases in MongoDB?",
+     options: ["db.show()", "show dbs", "db.list()", "list databases"],
+     answer: 2
+   },
+   {
+     question: "5) Which MongoDB method is used to update multiple documents?",
+     options: [
+       "update()",
+       "updateMany()",
+       "updateAll()",
+       "modifyMany()"
+     ],
+     answer: 2
+   },
+   {
+     question: "6) What is a collection in MongoDB?",
+     options: [
+       "A group of fields",
+       "A single document",
+       "A group of related documents",
+       "A database"
+     ],
+     answer: 3
+   },
+   {
+     question: "7) Which of the following is true about MongoDB?",
+     options: [
+       "It uses SQL for querying",
+       "It stores data in JSON-like format",
+       "It requires a strict schema",
+       "It supports transactions only for SQL queries"
+     ],
+     answer: 2
+   },
+   {
+     question: "8) How can you limit the number of documents returned in a query?",
+     options: [
+       "db.collection.find().restrict()",
+       "db.collection.find().max()",
+       "db.collection.find().limit()",
+       "db.collection.find().size()"
+     ],
+     answer: 3
+   },
+   {
+     question: "9) Which method is used to delete a single document in MongoDB?",
+     options: [
+       "db.collection.delete()",
+       "db.collection.removeOne()",
+       "db.collection.deleteOne()",
+       "db.collection.removeDocument()"
+     ],
+     answer: 3
+   },
+   {
+     question: "10) What does BSON stand for in MongoDB?",
+     options: [
+       "Binary Serialized Object Notation",
+       "Binary Script Object Notation",
+       "Binary JSON",
+       "Basic Script Object Notation"
+     ],
+     answer: 3
+   },
+   {
+     question: "11) Which MongoDB method is used to create an index?",
+     options: [
+       "db.collection.createIndex()",
+       "db.collection.addIndex()",
+       "db.collection.newIndex()",
+       "db.collection.index()"
+     ],
+     answer: 1
+   },
+   {
+     question: "12) What type of replication does MongoDB support?",
+     options: [
+       "Primary-secondary replication",
+       "Master-slave replication",
+       "Primary-secondary-arbiter replication",
+       "Leader-follower replication"
+     ],
+     answer: 3
+   },
+   {
+     question: "13) What is a replica set in MongoDB?",
+     options: [
+       "A group of identical databases",
+       "A set of documents in a collection",
+       "A group of MongoDB servers for high availability",
+       "A method to replicate indexes"
+     ],
+     answer: 3
+   },
+   {
+     question: "14) How can you sort the results of a MongoDB query?",
+     options: [
+       "db.collection.find().orderBy()",
+       "db.collection.find().sort()",
+       "db.collection.find().filter()",
+       "db.collection.find().arrange()"
+     ],
+     answer: 2
+   },
+   {
+     question: "15) Which method is used to count documents in a collection?",
+     options: [
+       "db.collection.countDocuments()",
+       "db.collection.countAll()",
+       "db.collection.total()",
+       "db.collection.countEntries()"
+     ],
+     answer: 1
+   },
+   {
+     question: "16) Which of the following is used to create a new database in MongoDB?",
+     options: [
+       "Use the 'CREATE DATABASE' statement",
+       "Create a collection in the new database",
+       "Install a MongoDB plugin",
+       "Create an index on the new database"
+     ],
+     answer: 2
+   },
+   {
+     question: "17) What does the MongoDB command `db.stats()` return?",
+     options: [
+       "Statistics about a collection",
+       "Statistics about the current database",
+       "Statistics about all documents",
+       "Statistics about indexes"
+     ],
+     answer: 2
+   },
+   {
+     question: "18) Which of the following is NOT a valid data type in MongoDB?",
+     options: ["String", "Array", "Binary", "Table"],
+     answer: 4
+   },
+   {
+     question: "19) Which operator is used for pattern matching in MongoDB?",
+     options: ["$regex", "$like", "$match", "$find"],
+     answer: 1
+   },
+   {
+     question: "20) How can you drop a collection in MongoDB?",
+     options: [
+       "db.collection.delete()",
+       "db.collection.drop()",
+       "db.collection.remove()",
+       "db.collection.clear()"
+     ],
+     answer: 2
+   }
+ ];
+ 
 export const javaQuiz = [
    {
      question: "1) Which of the following option leads to the portability and security of Java?",

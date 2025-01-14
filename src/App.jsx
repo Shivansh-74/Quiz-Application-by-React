@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import { javaQuiz, pyQuiz, reactQuiz, phpQuiz, frontendQuiz, djangoQuiz, sqlQuiz, ipcConstitutionQuiz } from './Data/QuizData';
+import { javaQuiz, pyQuiz, reactQuiz, phpQuiz, frontendQuiz, djangoQuiz, sqlQuiz,cppQuiz, ipcConstitutionQuiz,gitGithubQuiz,mongoDBQuiz,awsQuiz } from './Data/QuizData';
 import Quiz from './Components/Quiz.jsx';
 import { useDispatch } from 'react-redux';
 import { setQuizName } from '../src/redux/slice.js';
@@ -38,8 +38,20 @@ function App() {
       case "sql":
         setSelectedQuiz(sqlQuiz);
         break;
+      case "gitGithubQuiz":
+        setSelectedQuiz(gitGithubQuiz);
+        break;
       case "ipcConstitutionQuiz":
         setSelectedQuiz(ipcConstitutionQuiz);
+        break;
+      case "mongoDBQuiz":
+        setSelectedQuiz(mongoDBQuiz);
+        break;
+      case "awsQuiz":
+        setSelectedQuiz(awsQuiz);
+        break;
+      case "cppQuiz":
+        setSelectedQuiz(cppQuiz);
         break;
       default:
         setSelectedQuiz(null);
@@ -52,18 +64,19 @@ function App() {
       {/* Toggle button for mobile */}
       <button
         onClick={() => setIsSidebarVisible(!isSidebarVisible)}
-        className="md:hidden p-2 bg-gray-500 text-white rounded-md m-2 fixed top-4 left-8  z-20"
+        className="md:hidden p-2 bg-gray-500 text-white rounded-md m-2 fixed top-4 left-8  z-20 mt-1"
       >
         {isSidebarVisible ? 'Close Topics' : 'Open Topics'}
       </button>
 
       {/* Sliding sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full w-[250px] bg-gray-100 p-4 z-10 transform transition-transform duration-300 ease-in-out ${
-          isSidebarVisible ? 'translate-x-0' : '-translate-x-full'
-        } md:relative md:translate-x-0 md:w-1/3 md:block`}
-      >
-        <div className="flex flex-col space-y-2 mt-16">
+      className={`fixed top-0 left-0 h-full w-[250px] bg-gray-100 rounded p-4 z-10 transform transition-transform duration-300 ease-in-out overflow-y-auto ${
+        isSidebarVisible ? 'translate-x-0' : '-translate-x-full'
+      } md:relative md:translate-x-0 md:w-1/3 md:block`}
+    >
+      
+        <div className="flex flex-col space-y-2 mt-16 ">
           <button
             onClick={() => selectQuiz("java")}
             className={`py-2 px-4 border rounded-md hover:bg-gray-300 ${
@@ -121,12 +134,36 @@ function App() {
             SQL
           </button>
           <button
-            onClick={() => selectQuiz("ipcConstitutionQuiz")}
+            onClick={() => selectQuiz("gitGithubQuiz")}
             className={`py-2 px-4 border rounded-md hover:bg-gray-300 ${
-              activeQuizType === "ipcConstitutionQuiz" ? 'bg-gray-400 text-white' : 'bg-gray-200'
+              activeQuizType === "gitGithubQuiz" ? 'bg-gray-400 text-white' : 'bg-gray-200'
             }`}
           >
-            IPc
+           Git and Github
+          </button>
+          <button
+            onClick={() => selectQuiz("mongoDBQuiz")}
+            className={`py-2 px-4 border rounded-md hover:bg-gray-300 ${
+              activeQuizType === "mongoDBQuiz" ? 'bg-gray-400 text-white' : 'bg-gray-200'
+            }`}
+          >
+            Mongo DB
+          </button>
+          <button
+            onClick={() => selectQuiz("awsQuiz")}
+            className={`py-2 px-4 border rounded-md hover:bg-gray-300 ${
+              activeQuizType === "awsQuiz" ? 'bg-gray-400 text-white' : 'bg-gray-200'
+            }`}
+          >
+      AWS
+          </button>
+          <button
+            onClick={() => selectQuiz("cppQuiz")}
+            className={`py-2 px-4 border rounded-md hover:bg-gray-300 ${
+              activeQuizType === "cppQuiz" ? 'bg-gray-400 text-white' : 'bg-gray-200'
+            }`}
+          >
+      C++
           </button>
         </div>
       </div>
@@ -136,7 +173,7 @@ function App() {
         {selectedQuiz ? (
           <Quiz quizType={selectedQuiz} />
         ) : (
-          <h1 className="text-2xl font-bold text-gray-500 text-center">Please select a topic</h1>
+          <h1 className="text-2xl font-bold text-gray-500 text-center mt-4">Please select a topic</h1>
         )}
       </div>
     </div>
